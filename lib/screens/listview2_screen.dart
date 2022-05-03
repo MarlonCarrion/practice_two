@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class ListView2Screen extends StatelessWidget {
-  final options = const ['Filmoteca Maldita', 'Dross', 'Alvinsh'];
+  final options = const ['Ecuador', 'Argentina', 'Brazil'];
 
   const ListView2Screen({Key? key}) : super(key: key);
 
@@ -10,8 +10,6 @@ class ListView2Screen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Center(child: Text('List View 2')),
-        elevation: 10,
-        backgroundColor: Colors.indigo,
       ),
       body: ListView.separated(
         itemCount: options.length,
