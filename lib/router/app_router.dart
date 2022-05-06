@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:practice_two/models/models.dart';
-import 'package:practice_two/screens/avatar_screen.dart';
+import 'package:practice_two/screens/input_screen.dart';
 
 import '../models/menu_option.dart';
 import '../screens/screens.dart';
@@ -37,7 +37,12 @@ class AppRouter {
         route: 'animated',
         icon: Icons.animation,
         name: 'Animation',
-        screen: const AnimatedScreen())
+        screen: const AnimatedScreen()),
+    MenuOption(
+        route: 'input',
+        icon: Icons.input_outlined,
+        name: 'Input',
+        screen: const InputScreen())
   ];
 
   static Map<String, Widget Function(BuildContext)> getAppRoutes() {

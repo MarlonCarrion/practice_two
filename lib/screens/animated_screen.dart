@@ -13,7 +13,7 @@ class _AnimatedScreenState extends State<AnimatedScreen> {
   double _width = 100;
   double _heigth = 100;
   Color _color = Colors.red;
-  BorderRadiusGeometry _borderRadiusGeometry = BorderRadius.circular(20);
+  final BorderRadiusGeometry _borderRadiusGeometry = BorderRadius.circular(20);
 
   void changeShape() {
     final random = Random();
